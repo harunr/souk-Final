@@ -1,0 +1,170 @@
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+.clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+a img{border:0}
+a,input,select,textarea{outline:none}
+input::-moz-focus-inner{border:0; padding: 0}
+
+
+/*	Typography presets
+	------------------	*/
+body {
+    font-size: 18px; font-family: 'Brandon Grotesque Medium'; font-weight: 500;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+/*		Default Layout 
+-------------------------------------------------------------------------------
+*/
+
+body {background: rgb(255,255,255), #FFFFFF; color: #1c1b1b;  -webkit-text-size-adjust: 100%; -moz-text-size-adjust:100%; overflow-x: hidden; }
+
+/*.box-sizing, #homeHero-section*/ 
+*{-webkit-box-sizing: border-box;-moz-box-sizing:border-box;box-sizing: border-box;}
+
+
+/* ============================= Common style ================================ */
+
+h1{font-size: 48px; color: #FFFFFF; font-family: 'Freight'; font-weight: normal;}
+h2{font-size: 36px; color: #1c1b1b; font-family: 'Freight'; font-weight: normal;}
+h3{font-size: 36px; color: #1c1b1b; font-family: 'Brandon Grotesque Light'; font-weight: 300; font-style: italic;}
+h3{font-size: 36px; color: #1c1b1b; font-family: 'Brandon Grotesque Light'; font-weight: 300; font-style: italic;}
+
+.section-wrap {float: left; width: 100%; position: relative;}
+.common-wrap{max-width: 1160px; margin: 0 auto; clear: both; position: relative;}
+/* // Common style */
+
+/* ==================== Home page == Header section ========================= */
+
+#home-page{float: left; width: 100%; overflow-x: hidden;}
+.header-section{width: 100%; position: fixed; top: 0; left: 0; z-index: 33}
+.header{float: left; width: 100%;}
+.logo-wrap{float: left; width: 215px; }
+.logo-wrap img{float: left; width: 100%; margin-top: 60px; z-index: 1}
+
+.main-nav{float: right; width: 485px; position: relative; z-index: 77;}
+.main-nav ul{margin: 45px 0 0; padding: 0; list-style: none;}
+.main-nav ul li{float: left; margin: 0 1px ; position: relative;}
+.main-nav ul li a{text-decoration: none; border: 2px solid transparent; font-size: 14px; font-family: 'Brandon Grotesque Light'; color: #ffffff; padding: 12px 0; text-transform: uppercase; width: 158px; display: block; text-align: center;}
+.main-nav ul > li > a:hover, .main-nav ul > li.active > a{border: 2px solid rgb(176,174,177);background: rgba(51, 51, 51, .3)}
+/*dropdown style*/
+
+.main-nav ul li ul{margin: 0; padding: 0; list-style: none; position: absolute; top: 48px; left: -99999px;}
+.main-nav ul li:hover ul{left: 0;}
+.main-nav ul li ul li{float: none; margin: 0px;}
+.main-nav ul li ul li a{padding: 10px 0; margin-top: -2px; display: block; font-size: 14px; color: #ffffff; background: rgba(51, 51, 51, 0.3); border:  2px solid rgb(176,174,177); text-transform: capitalize;}
+.main-nav ul li ul li a:hover{background: rgba(51, 51, 51, 0.6); border:  2px solid rgb(176,174,177);}
+
+.mobi-logo{display:none;position: absolute;left:20px;top: 20px;z-index: 10}
+.mobi-header{position: fixed;left: 0;top: 0;z-index:10;width: 100%;height:50px;}
+.fixedTop .mobi-header{background: rgba(51, 51, 51, 0.7); display: none;}
+.flex-control-nav li{margin: 0 5px;}
+
+.phone-nav{cursor:pointer;display:none;overflow:hidden;padding:5px;position:absolute;right:15px;top:12px;width:35px;z-index:3333;border-radius:2px 2px 2px 2px;-moz-border-radius:2px 2px 2px 2px;-webkit-border-radius:2px 2px 2px 2px}
+.phone-nav div{float:left;display:block;width:100%;height:2px;margin:2px 0;line-height:2px;background:#fff}
+
+
+
+/* ============================ Home Hero section ======================= */
+
+
+#homeHero-section{padding-top: 100vh; /*padding-top: 100%;*/ z-index: 1; overflow: hidden; box-sizing: border-box}
+.home-hero-img{width: 100%; height: 100vh; height: 100%; left: 0; top: 0;  position: fixed;}
+#home-slider{height: 100%;}
+#home-slider .slides, #home-slider .slides li{height:100%; height: 100vh}
+
+.hero-content-wrap{position: fixed; left: 0; top: 0; height: 100%; width: 100%; display: inline-table;}
+.hero-content{width: 100%; display: table-cell; vertical-align: middle; text-align: center;}
+.hero-content h1{text-align: center;}
+
+/*=============== Style control nav ==============*/
+.flex-control-nav{max-width: 300px; width: 100%;}
+.flex-control-nav li, .flex-control-paging li a{width: 13px; height: 13px; border-radius: 10px;}
+.flex-control-paging li a{background: #fcfcfc;}
+
+
+/* ==================== Main content section ========================== */
+.section-wrap:nth-child(3) .common-wrap{max-width: 1150px; padding:0 15px}
+.main-content-section{background: #FFFFFF; padding: 55px 0; position: relative; z-index: 77}
+.main-content{float: left; width: 100%;}
+.lead-text{float: left; width: 100%; text-align: center;}
+.lead-text p{margin-top: 22px; padding: 0 60px; font-family: 'Brandon Grotesque Light';}
+.content-gallary{float: left; width: 100%; margin-top: 35px;}
+.gallary-item{float: left; width: 48%; margin: 2%; position: relative; }
+.gallary-item img{float: left; width: 100%; position: relative;}
+.gallary-item:nth-child(odd){margin-left: 0px;}
+.gallary-item:nth-child(even){margin-right: 0px;}
+.gallary-img{ float: left; width: 100%; height: 100%; position: relative; background: #d8d8d8; z-index: 1}
+.overlay-wrap{width: 100%; height: 100%; transition: all .3s ease-in-out; opacity: 0; position: absolute; z-index: 8 }
+.overlay{ float: left;width: 100%; height: 100%;  display: inline-table;z-index: 10;}
+.gallary-text{width: 100%;text-align: center; display: table-cell; vertical-align: middle; overflow: hidden;}
+.gallary-text a{text-decoration: none; color: #ffffff; font-size: 18px; font-family: 'Brandon Grotesque Light';}
+.gallary-item:hover .overlay-wrap {opacity: 1;}
+.flex-control-nav{bottom: 55px;}
+
+/* ===================== Footer section ========================== */
+
+.footer-section{ background: #d6623c; position: relative; min-height: 465px;  z-index: 77;}
+.footer{float: left; width: 100%; text-align: center; margin-top: 236px; text-transform: uppercase; font-size: 18px; color: #FFFFFF; font-family: 'Brandon Grotesque Light'; font-weight: 500 }
+.footer a{text-decoration: none; text-transform: uppercase; font-size: 18px; color: #FFFFFF; }
+.footer a:hover, #wandering-souk-page .footer a:hover{text-decoration: underline;}
+
+
+
+/* ===================== Wandering soukh page style ================== */
+#wandering-souk-page{float: left; width: 100%; overflow-x: hidden;}
+#wandering-souk-page .main-content-section{padding-bottom: 0px;}
+#wandering-souk-page .section-wrap:nth-child(3) .common-wrap{max-width: 990px; padding:0 15px}
+#wandering-souk-page .lead-text{position: relative; }
+#wandering-souk-page .lead-text:before{position: absolute; left: 50%; margin-left: -208px; ; top: 50px; width: 416px; height: 1px; background: #6d6a6a; content: ""; }
+#wandering-souk-page .lead-text h2{padding-bottom:  23px;}
+#wandering-souk-page .lead-text span{font-family: 'Brandon Grotesque Light'; font-style: italic; }
+#wandering-souk-page .lead-text p{margin-top: 30px;}
+
+#wandering-souk-page .gallary-row{float: left; width: 100%}
+#wandering-souk-page .gallary-row .gallary-img{float: left;margin: 1.0416666666%}
+#wandering-souk-page .gallary-row .gallary-img img{float: left; width: 100%;}
+
+#wandering-souk-page .gallary-row:nth-child(1) .gallary-img:nth-child(odd){ width: 36.45833333%; margin-left: 0px;}
+#wandering-souk-page .gallary-row:nth-child(1) .gallary-img:nth-child(even){width: 61.45833333%; margin-right: 0px;}
+
+#wandering-souk-page .gallary-row:nth-child(2) .gallary-img:nth-child(odd){ width: 68.75%; margin-left: 0px;}
+#wandering-souk-page .gallary-row:nth-child(2) .gallary-img:nth-child(even){width: 29.166666666666%; margin-right: 0px;}
+
+#wandering-souk-page .gallary-row:nth-child(3) .gallary-img{width: 100%; margin-right: 0px; margin-left: 0px;}
+
+#wandering-souk-page .gallary-row:nth-child(4) .gallary-img:nth-child(odd){ width: 29.166666666666%; margin-left: 0px;}
+#wandering-souk-page .gallary-row:nth-child(4) .gallary-img:nth-child(even){width: 68.75%; margin-right: 0px;}
+
+#wandering-souk-page .footer-section{background: #FFFFFF; min-height: 150px;}
+#wandering-souk-page .footer{font-size: 18px; color: #1c1b1b; margin-top: 40px; text-transform: inherit; font-family: 'Brandon Grotesque Medium'; font-weight: 500}
+#wandering-souk-page .footer a{text-decoration: none; font-size: 18px; color: #1c1b1b; display: inline-block; text-transform: inherit; font-family: 'Brandon Grotesque Medium'; font-weight: 500;}
+

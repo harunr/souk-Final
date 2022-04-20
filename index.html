@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1"/>-->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Souk:: Home</title>
+
+    <link type="text/css" rel="stylesheet" href="css/fonts.css">
+    <link type="text/css" rel="stylesheet" href="css/flexslider.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/responsive.css">
+
+    <script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="scripts/common-scripts.js"></script>
+    
+    <script type="text/javascript">
+        ;(function($){
+            $(function(){
+
+                $(window).scroll(function() { 
+                    if($(window).width() > 767 ){
+                        // The social div 
+                        var $titleDiv = $('#titleDiv');
+                        var $logo = $('#logo');
+                        var $nav = $('#nav');
+
+                        //Get scroll position of window 
+                        var windowScroll = $(this).scrollTop(); 
+
+                        //Slow scroll of social div and fade it out 
+                        $titleDiv.css({ 
+                           // 'margin-top' : - (windowScroll / 4) + "px", 
+                            'opacity' : 1 - (windowScroll / 500) 
+                        }); 
+                        $logo.css({ 
+                            //'margin-top' : - (windowScroll / 4) + "px", 
+                            'opacity' : 1 - (windowScroll / 600) 
+                        }); 
+                        $nav.css({ 
+                           // 'margin-top' : - (windowScroll / 4) + "px", 
+                            'opacity' : 1 - (windowScroll / 600) 
+                        }); 
+                    } // End if function
+                });
+
+            });
+
+
+
+        })(jQuery)
+
+    </script>
+
+    </head>
+
+    <body>
+        <div id="home-page">
+            <!--Begin header section -->
+            <section id="header-section" class="section-wrap header-section">
+                <div class="common-wrap clear">
+                    <header class="header">
+                        <div class="logo-wrap" id="logo">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+                        <div class="nav-wrap">
+                            <div class="mobi-header">
+                                <div class="mobi-logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+                                <div class="phone-nav">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="main-nav" id="nav">
+                                <ul>
+                                    <li class="active"><a href="#">Offering</a>
+                                        <ul>
+                                            <li><a href="wandering-souk.html">The wandering souk</a></li>
+                                            <li><a href="#">Just for two</a></li>
+                                            <li><a href="#">Boutique Picnic</a></li>
+                                            <li><a href="#">Item Hire</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </section>
+            <!-- // End header -->
+            
+            <!-- Begin home hero section -->
+            <section class="section-wrap" id="homeHero-section">
+                <div class="home-hero-img">
+                    <div class="hero flexslider " id="home-slider">
+                        <ul class="slides">
+                            <li class="slide" style="background:url(images/slider-img1.jpg) no-repeat center center; background-size: cover;"></li>
+                            <li class="slide" style="background:url(images/slider-img2.jpg) no-repeat center center; background-size: cover;"></li>
+                            <li class="slide" style="background:url(images/slider-img1.jpg) no-repeat center center; background-size: cover;"></li>
+                            <li class="slide" style="background:url(images/slider-img2.jpg) no-repeat center center; background-size: cover;"></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="hero-content-wrap">
+                    <div class="hero-content" id="titleDiv">
+                        <h1>Traveling atmostphares &amp; events design</h1>
+                    </div>
+                    <div id="slider-bullet"></div>
+                </div>
+            </section>
+            <!-- // End home hero -->
+            
+            <!-- Begin main content section -->
+            <section class="section-wrap main-content-section">
+                <div class="common-wrap">
+                    <div class="main-content">
+                        <div class="lead-text">
+                            <h2>Hand picked textiles and unique treasures for your magic event</h2>
+                            <p>We'v pre-styled and created various loocks and set ups for uniquely designed events with an ecclectic &amp; bohemian feel. our set ups are ideal for specal proposal picnic, birthdays and weddings. You can hire the whole look and set it up yourself, or we can assist on the day. We also do individual rentals.</p>
+                        </div>
+                        <div class="content-gallary">
+                            <div class="gallary-item">
+                                <img src="images/Home-gallery2.jpg" alt="">
+                                <div class="overlay-wrap">
+                                    <div class="overlay">
+                                        <div class="gallary-text">
+                                            <a href="#">The Wandering Souk <br> Bohemian style event design</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallary-item">
+                                <img src="images/Home-gallery-img.jpg" alt="">
+                                <div class="overlay-wrap">
+                                    <div class="overlay">
+                                        <div class="gallary-text">
+                                            <a href="#">Just for Two, <br> Proposal picnics</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallary-item">
+                                <img src="images/Home-gallery-img.jpg" alt="">
+                                <div class="overlay-wrap">
+                                    <div class="overlay">
+                                        <div class="gallary-text">
+                                            <a href="#">Boutique outdoor picnic</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallary-item">
+                                <img src="images/Home-gallery2.jpg" alt="">
+                                <div class="overlay-wrap">
+                                    <div class="overlay">
+                                        <div class="gallary-text">
+                                            <a href="#">Individual item hire <br> (min hiring charge)</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // End main content -->
+            
+            <!-- Begin footer section -->
+            <section class="section-wrap footer-section">
+                <div class="common-wrap clear">
+                    <div class="footer">
+                        <a href="#">Contact for more information</a>
+                    </div>
+                </div>
+            </section>
+            <!-- // End footer -->
+        </div>
+
+    </body>
+	
+</html>

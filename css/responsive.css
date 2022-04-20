@@ -1,0 +1,100 @@
+/*		Mobile Layout: 320px and 480px and more but less than or equal to 767px.
+----------------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 767px) {
+    body{font-size: 16px;}
+    .logo-wrap { width: 150px; margin-top: 20px; margin-left: 30px; display: none;}
+    .main-nav {width: 100%; background: rgba(104,99,106,0.8); margin-top: 0;}
+    .main-nav ul{margin: 0; padding: 0;}
+    .main-nav ul li{float: none;}
+    .main-nav ul li a{width: 100%;}
+    .main-nav ul li ul{width: 100%;position: relative;}
+    .phone-nav{display: block;}
+    .main-nav{display: none; height: 170px; overflow-y: scroll;}
+    
+    .hero-content h1{font-size: 30px;}
+    .lead-text p{padding: 0}
+    .lead-text h2{font-size: 24px;}
+    #wandering-souk-page .lead-text::before {margin-left: -180px; top: 40px; width: 360px; }
+    .gallary-item{width: 100%; margin: 10px 0; height: auto;}
+    .footer-section{min-height: 125px;}
+    .footer{font-size: 16px; padding: 0 20px; margin-top: 45px;}
+    
+    .logo-wrap img{margin-top: 0; position: relative; z-index: 22}
+    #homeHero-section{padding-top: 0; height: 300px;}
+    .home-hero-img{height: 300px; position: relative;}
+    .hero-content-wrap{position: absolute; top: 0;}
+    .flex-control-nav{bottom: 30px;}
+    
+    .mobi-header{position: relative;}
+    .header-section{z-index: 99}
+    .main-nav ul li ul{left: 0; display: none; top: 0;}
+    .fixedTop .mobi-header{display: block;}
+    .flex-control-nav{margin: 0 0 0 -55px;}
+}
+
+
+.flex-control-nav li{margin: 0 7px;}
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .footer-section{min-height: 140px;}
+    .footer{margin-top: 60px;}
+    .gallary-item{width: 48%; margin: 2%;}
+
+
+}
+
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+    body {}
+    h1{font-size: 38px;}
+    h2{font-size: 30px;}
+    .logo-wrap{margin-top: 30px; width: 180px; margin-left: 20px;}
+    .footer-section{min-height: 350px;}
+    .footer{margin-top: 170px;}
+    .logo-wrap img{margin-top: 10px;}
+    .logo-wrap{180px;}
+    .main-nav ul li a{width: 155px;}
+    .flex-control-nav li{margin: 0 7px;}
+    .flex-control-nav{margin: 0 0 0 -55px;}
+}
+
+
+/*		Tablet Layout: 1024px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .footer-section{min-height:  345px}
+    .footer{margin-top: 170px;}
+    .logo-wrap img{margin-left: 20px;}
+    .flex-control-nav li{margin: 0 7px;}
+    .flex-control-nav{margin: 0 0 0 -55px;}
+}
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	body {
+	
+	}
+	
+}
